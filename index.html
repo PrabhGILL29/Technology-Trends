@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technology Trends in India</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-image: url('https://cdn.pixabay.com/photo/2016/02/10/21/50/flag-1192633_640.jpg'); 
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6); 
+    }
+    
+    header {
+      background-color: rgba(0, 102, 204, 0.8);
+      color: white;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+      border-radius: 10px;
+    }
+
+    header h1 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 3em;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #ffcc00;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    }
+
+    header p {
+      font-size: 1.2em;
+      font-weight: 500;
+      color: #f2f2f2;
+    }
+
+    main {
+      margin: 20px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .iframe-container {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    iframe {
+      width: 300px;
+      height: 200px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #quiz-section {
+      background-color: #eef;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    button {
+      background-color: #0066cc;
+      color: white;
+      padding: 12px 18px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 1.1em;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    button:hover {
+      background-color: #004c99;
+      transform: scale(1.05);
+    }
+
+    button:focus {
+      outline: none;
+    }
+
+    .image-gallery img {
+      width: 150px;
+      margin: 10px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .image-gallery img:hover {
+      transform: scale(1.1);
+      border-color: #0066cc;
+      box-shadow: 0 4px 15px rgba(0, 102, 204, 0.5);
+    }
+
+    #video-section {
+      margin: 30px 0;
+    }
+
+    h2 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      color: #333;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    #quiz-feedback {
+      font-size: 1.1em;
+      font-weight: 500;
+      margin-top: 10px;
+    }
+
+    .section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .section ul li {
+      margin: 10px 0;
+      font-size: 1.2em;
+    }
+
+    .section ul li a {
+      color: #0066cc;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .section ul li a:hover {
+      color: #004c99;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Technology Trends in India</h1>
+    <p>An interactive exploration of India's technological advancements</p>
+  </header>
+  <main>
+    <!-- Section 1: iFrames -->
+    <div class="section">
+        <h2>Latest Tech News</h2>
+        <ul>
+          <li><a href="https://economictimes.indiatimes.com/tech" target="_blank">Economic Times Tech</a></li>
+          <li><a href="https://www.livemint.com/technology" target="_blank">LiveMint Technology</a></li>
+          <li><a href="https://gadgets360.com/" target="_blank">NDTV Gadgets360</a></li>
+          <li><a href="https://www.techradar.com/in" target="_blank">TechRadar India</a></li>
+        </ul>
+    </div>
+    
+    <!-- Section 2: Conditional Statements & Loops -->
+    <div id="quiz-section" class="section">
+      <h2>Test Your Knowledge</h2>
+      <p>Answer this question about Indian technology trends:</p>
+      <p id="question">Which platform revolutionized digital payments in India?</p>
+      <input type="text" id="answer" placeholder="Type your answer here">
+      <button onclick="checkAnswer()">Submit</button>
+      <p id="quiz-feedback"></p>
+    </div>
+
+    <!-- Section 3: Array and Function -->
+    <div id="image-gallery-section" class="section">
+      <h2>Technology in Action</h2>
+      <p>Click on the images to view more details:</p>
+      <div class="image-gallery">
+        <img src="https://media.istockphoto.com/id/858053178/photo/digital-electronic-components-circuit-boards-technology-era-india-map.jpg?s=1024x1024&w=is&k=20&c=CJsECmaaba-eCbVoU56S2Gc5o-FjDgNHmIH1x0ld-FQ=" alt="AI" onclick="showInfo('AI')">
+        <img src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_640.jpg" alt="FinTech" onclick="showInfo('FinTech')">
+        <img src="https://cdn.pixabay.com/photo/2020/10/07/18/19/teacher-5635919_640.png" alt="EdTech" onclick="showInfo('EdTech')">
+      </div>
+      <p id="gallery-info"></p>
+    </div>
+
+    <!-- Section 4: Multimedia -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/JeU_EYFH1Jk?si=gC47qVXbfGalHFou" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </main>
+
+  <script>
+    // Conditional Statements and Function
+    function checkAnswer() {
+      const answer = document.getElementById('answer').value.toLowerCase();
+      const feedback = document.getElementById('quiz-feedback');
+
+      if (answer === 'upi') {
+        feedback.textContent = 'Correct! UPI transformed digital payments in India.';
+        feedback.style.color = 'green';
+      } else {
+        feedback.textContent = 'Try again! Hint: It starts with "U".';
+        feedback.style.color = 'red';
+      }
+    }
+
+    // Array and Function
+    const techDetails = {
+      AI: 'AI is widely used in healthcare, agriculture, and customer service in India. AI in Healthcare: Early diagnosis using AI.',
+      FinTech: 'FinTech revolutionized payments in India with services like UPI, and innovations like digital wallets.',
+      EdTech: 'EdTech has taken the Indian educational system to the next level with virtual classrooms, e-learning, and online tutoring.'
+    };
+
+    function showInfo(tech) {
+      const info = document.getElementById('gallery-info');
+      info.textContent = techDetails[tech];
+    }
+  </script>
+</body>
+</html>
+
